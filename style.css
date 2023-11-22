@@ -331,7 +331,6 @@ footer {
 /* Responsive */
 /* Tablet */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    #hero 
     #features {
         display: flex;
         flex-direction: column;
