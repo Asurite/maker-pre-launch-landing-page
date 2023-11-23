@@ -174,13 +174,17 @@ button:active {
 }
 .feature2 {
     width: 255px;
+    margin-top: 39px;
 }
 .feature3 {
     width: 255px;
 }
 .feature4 { 
     width: 255px;
+    margin-top: 39px;
 }
+
+
 
 /* Pricing */
 .pricing-intro {
@@ -332,38 +336,40 @@ footer {
 /* Tablet */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
     #features {
-        display: flex;
         flex-direction: column;
         gap: 23px;
         margin-top: 144px;
+        
     }
     
-    .feature1 {
-       justify-content: space-between;
-       flex-direction: row;
-    }
-
     .plans {
         flex-direction: column; 
+    }
+    .feature2, .feature4 {
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 340px;
+    }
+
+    .feature1, .feature3 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 340px;
     }
   }
 /* Mobile */
 
 @media only screen and (max-width: 599px) {
     #features {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         justify-content: center;
+        text-align: center;
         gap: 23px;
         margin-top:399px;
+        
     }
-
-    .feature1, .feature2, .feature3, .feature4 {
-        text-align: center;
-        justify-content: center;
-    }
-
 
     .plans {
         flex-direction: column; 
@@ -393,5 +399,8 @@ footer {
         position: absolute;
         top: -34px;
         right: 316px;
+    }
+    .feature2, .feature4 {
+        margin-top: 0px;
     }
   }
